@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let numeroMiembros = parseInt(prompt('Ingrese la cantidad de miembros en la familias'));  //se ingresa total de miembros de familia
+        let contador = 1;       //iteración de la cantidad de veces <= numero de miembros;
+        let totalEdades = 0;            //total de edades de los miembros
+
+        while (contador <= numeroMiembros) {
+            let edad = parseInt(prompt('Ingrese la edad del familiar'));
+            totalEdades = totalEdades + edad;
+            contador++;
+        }
+
+        const mediaEdades = totalEdades / numeroMiembros;
+        console.log(`La edad promedio de la familia es: ${mediaEdades}`);
+    </script>
+</body>
+</html>
